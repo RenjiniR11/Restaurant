@@ -1,0 +1,122 @@
+    .background {
+        background-image: url("https://th.bing.com/th/id/OIP.4_XFHyj_t_tmTPJk2BIZKwHaEK?w=330&h=185&c=7&r=0&o=5&dpr=1.25&pid=1.7");
+        height: 100vh;
+        background-size: cover;
+        background-repeat: repeat;
+        overflow: hidden;
+    }
+    
+    .title {
+        color: white;
+    }
+    
+    #bt1 {
+        margin-right: 50px;
+        margin-left: -600px;
+        border-style: solid;
+        border-color: orange;
+    }
+    
+    #bt2 {
+        border-style: solid;
+        border-color: orange;
+    }
+    
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(39, 39, 39, 0.5);
+        text-align: center;
+        background-size: cover;
+    }
+    
+    .greeting {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Mint Pistachio1";
+        margin-top: 20px;
+        display: inline-block;
+        color: white;
+        text-shadow: 2px 2px 5px #303238;
+    }
+    
+    .greeting h3 {
+        font-size: 3em !important;
+    }
+    
+    .greeting h4 {
+        font-size: 2em !important;
+    }
+    
+    .greeting h5 {
+        margin-left: -800px;
+    }
+    
+    .absolute {
+        margin-top: 200px;
+        margin-bottom: -200px;
+        margin-left: -500px;
+    }
+    
+    .in {
+        margin-top: 200px;
+        margin-bottom: -40px;
+        margin-left: -800px;
+    }
+    
+    @media (max-width: 1050px) {
+        .greeting h3 {
+            font-size: 2.25em !important;
+        }
+        .greeting h4 {
+            font-size: 1.25em !important;
+        }
+        .absolute {
+            margin-bottom: -60px;
+            margin-left: -500px;
+        }
+        .in {
+            margin-top: -10px;
+            margin-bottom: -50px;
+        }
+    }
+    
+    @media (max-width: 850px) {
+        .greeting h3 {
+            font-size: 2em !important;
+        }
+        .greeting h4 {
+            font-size: 1.25em !important;
+        }
+        .absolute {
+            margin-bottom: -45px;
+            margin-left: 00px;
+            margin-right: 1000px;
+        }
+        .in {
+            margin-top: 0px;
+            margin-bottom: -20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .greeting {
+            margin-top: 300px;
+        }
+        .greeting h3 {
+            font-size: 1.5em !important;
+        }
+        .greeting h4 {
+            font-size: 1em !important;
+        }
+        .absolute {
+            margin-bottom: -20px;
+            margin-left: 00px;
+        }
+        .in {
+            margin-top: 0px;
+            margin-bottom: -20px;
+        }
+    }
