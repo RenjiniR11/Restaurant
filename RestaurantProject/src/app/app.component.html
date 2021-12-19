@@ -1,2 +1,69 @@
-<app-home>
-</app-home>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<div class="background">
+
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+
+            <div class="contact-info d-flex align-items-center">
+                <i class="fa fa-phone "><span class="contact-text phone">+91 6053935067</span></i>
+                <i class="fa fa-clock-o"><span> Mon-Sat: 9AM - 11PM</span></i>
+            </div>
+
+            <div class="languages d-none d-md-flex align-items-center">
+                <ul>
+                    <li>En</li>
+                    <li><a href="#">De</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0">
+                <a href="home">SKAR Hotel</a>
+            </h1>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li> <a class="nav-link " [routerLink]="[ 'home'] " routerLinkActive="active ">Home</a></li>
+                    <li><a class="nav-link " [routerLink]="['/about']" routerLinkActive="active ">About</a></li>
+                    <li><a class="nav-link" [routerLink]="['/menu']" routerLinkActive="active ">Menu</a></li>
+                    <li> <a class="nav-link " [routerLink]="['/event'] " routerLinkActive="active ">Event</a></li>
+
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li>
+                                <a class="nav-link " [routerLink]="['/about']" routerLinkActive="active ">About</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" [routerLink]="['/menu']" routerLinkActive="active ">Menu</a>
+                            </li>
+                            <li><a class="nav-link " [routerLink]="['/event'] " routerLinkActive="active ">Event</a></li>
+                            <li>
+                                <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active ">Contact</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" [routerLink]="['/reservation']" routerLinkActive="active ">Book a Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link " [routerLink]="['/contact'] " routerLinkActive="active ">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+            <a [routerLink]="['/reservation'] " routerLinkActive="active " href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+
+        </div>
+    </header>
+
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

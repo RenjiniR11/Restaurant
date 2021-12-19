@@ -8,6 +8,10 @@ import { NavComponent } from './nav/nav.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { EventComponent } from './event/event.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReservationComponent } from './reservation/reservation.component';
+import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,16 @@ import { EventComponent } from './event/event.component';
     NavComponent,
     MenuComponent,
     AboutComponent,
-    EventComponent
+    EventComponent,
+    ContactComponent,
+    ReservationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    RouterModule.forRoot([{path:'',component:ReservationComponent},
+  {path:'app-reservation',component:ReservationComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
